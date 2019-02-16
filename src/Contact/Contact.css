@@ -1,0 +1,49 @@
+.container-contact{
+  display: flex;
+  justify-content: center;
+  align-items : center;
+  padding: 100px;
+  padding-top: 180px;
+  padding-bottom: 175px;
+}
+.card-addr{
+  font-weight:100;
+  text-align:left;
+
+}
+.text-addr{
+  line-height: 30px;
+}
+.txt-contact{
+  border-bottom: 2px solid rgb(17, 81, 124);
+  padding-bottom: 10px;
+}
+.img-map{
+  height: auto;
+  max-width:  340px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 1000px) {
+  .img-map{
+    max-width: 100% !important;
+    width : 500px !important;
+  }
+  .container-contact{
+    display: block !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
+  .box-img{
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .card-addr{
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
