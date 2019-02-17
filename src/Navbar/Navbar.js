@@ -18,6 +18,10 @@ function scrollFunction() {
       box.style.paddingBottom = '14px';
       box.style.marginLeft = '30px';
     })
+    let upscroll = document.getElementById('icon-scroll');
+    upscroll.style.visibility = 'visible';
+    upscroll.style.fontSize = '2.5vw';
+
     // let select = document.querySelectorAll('#select');           //select aboutMe
     // select.forEach((sel, index) => {
     //   if(index === 0){
@@ -74,6 +78,12 @@ function scrollFunction() {
       box.style.marginLeft = '0px';
 
     })
+
+    let upscroll = document.getElementById('icon-scroll');
+    upscroll.style.visibility = 'hidden';
+    upscroll.style.fontSize = '0px';
+
+
     // let select = document.querySelectorAll('#select');      //select none
     // select.forEach((sel) => {
     //     sel.style.color = 'unset';

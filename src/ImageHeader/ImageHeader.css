@@ -15,7 +15,7 @@
 }
 .centered-txt {
   position: absolute;
-  top: 58%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: .3em;
@@ -23,7 +23,7 @@
 }
 .centered-txt-web {
   position: absolute;
-  top: 65%;
+  top: 61%;
   left: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: .3em;

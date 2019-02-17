@@ -6,7 +6,8 @@ import AboutMe from './AboutMe/AboutMe';
 import Exp from './Exp/Exp';
 import Contact from './Contact/Contact';
 import Fade from 'react-reveal/Fade';
-import Footer from './Footer/Footer'
+import Footer from './Footer/Footer';
+import ScrollUp from './ScrollUp/ScrollUp';
 
 
 const exp = [
@@ -60,6 +61,7 @@ class App extends Component {
     this.me = React.createRef();
     this.experience = React.createRef();
     this.contact = React.createRef();
+    this.top = React.createRef();
   }
   componentDidMount(){
   }
@@ -72,6 +74,8 @@ class App extends Component {
       this.experience.current.scrollIntoView({ behavior: 'smooth', block: 'start'})
     }else if(route === "contact"){
       this.contact.current.scrollIntoView({ behavior: 'smooth', block: 'start' })      
+    }else if(route === "top"){
+      this.top.current.scrollIntoView({ behavior: 'smooth', block: 'start' })      
     }
   }
 
@@ -79,23 +83,26 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar onRouteChange={this.onRouteChange} />
+        <ScrollUp onRouteChange={this.onRouteChange} />
+        <div ref={this.top}></div>
         <ImageHeader />
-        <div ref={this.me} style={{paddingTop:'150px'}}></div>    {/*stop scroll for about Me*/}
+
+        <div ref={this.me} className="stop-scroll-aboutme"></div>    {/*stop scroll for about Me*/}
         <Fade bottom>
           <AboutMe />
         </Fade>
-        <div ref={this.experience} style={{paddingTop:'60px'}}></div>    {/*stop scroll for experience*/}
+        <div ref={this.experience} ></div>    {/*stop scroll for experience*/}
         <div className="bg-strip pb5" >
           <div className="w-100 pa4" >
             <Fade bottom>
-              <h1 className="certer">Project Done</h1>
+              <h1 className="certer" style={{paddingTop:"50px"}}>Project Done</h1>
             </Fade>
           </div>
           <div className="pt4 w-100 center br4 exp-box" style={{ backgroundColor: "#fafafa" , maxWidth:"900px"}}>
             {exp_all}
           </div>
         </div>
-        <div ref={this.contact}>         {/*stop scroll for experience*/}
+        <div ref={this.contact} >         {/*stop scroll for contact*/}
           <Fade bottom>
             <Contact />
           </Fade>

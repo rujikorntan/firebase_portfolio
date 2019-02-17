@@ -1,0 +1,33 @@
+.up-scroll{
+  position: fixed;
+  z-index: 1;
+  top: 90%;
+  left: 95%;
+}
+#icon-scroll{
+  transition: 0.2s;
+  font-size: 2.5vw; 
+  color: rgb(138, 138, 138);
+}
+#icon-scroll:hover{
+  color: rgb(230, 76, 16);
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  #icon-scroll{
+    font-size: 5vw !important; 
+  }
+  .up-scroll{
+    top: 95% ;
+    left: 90%;
+  }
+  #icon-scroll:hover{
+    color: unset;
+  }
+}
+@media screen and (max-height: 360px) {
+  .up-scroll{
+    top: 85% !important;
+  }
+}

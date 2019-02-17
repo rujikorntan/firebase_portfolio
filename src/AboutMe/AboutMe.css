@@ -1,14 +1,61 @@
 .container-about{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+.text-about-me {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    line-height: 2.1vw;
     text-align: left;
-    line-height: 30px;
-    margin-bottom: 0px;
-    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255,0.2);
+    padding: 40px;
+
+  }
+.text-about-me p{
+    font-weight: 100;
+    font-size: 1.2vw;
+
+}
+.image-center{
+    visibility: hidden;
+    height: 0;
+    width: 0;
 }
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
     .container-about{
-        font-size: 0.8em;
-        width: 80% !important;
+        position: unset !important;
+        /* display: inline !important; */
+    }
+    .text-about-me{
+        position: unset ;
+        top: unset ;
+        left: unset ;
+        transform:unset ;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+    }
+    .text-about-me p{
+        line-height: 4.0vh;
+        font-size: 0.9em;
+    }
+    .bg-img-about{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    } 
+    .image-center{
+        visibility: visible;
+        height: auto;
+        width: 100%;
+    }
+    .stop-scroll-aboutme{
+        padding-top: 40px;
     }
   }
