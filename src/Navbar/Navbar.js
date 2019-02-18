@@ -109,7 +109,7 @@ const Navbar = ({onRouteChange}) => {
     <div className="nav-bar" id="navnav">
       <ul className="menu-bar">
         <li id="select"  onClick={() => routeTo('me', 0)}>About me</li>
-        <li id="select"  onClick={() => routeTo('experience', 1)}>Experience</li>
+        <li id="select"  onClick={() => routeTo('experience', 1)}>Project Done</li>
         <li id="select"  onClick={() => routeTo('contact', 2)}>Contact</li>
       </ul>
     </div>

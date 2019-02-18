@@ -1,6 +1,6 @@
 .img-profile{
   width : 100%;
-  max-width: 150px;
+  max-width: 190px;
   /* border : 4px solid rgb(54, 54, 54); */
   border-radius: 300px;
   margin: 0px;
@@ -36,7 +36,8 @@
   transform: translate(-50%, -50%);
 }
 .bg-gredient{
-  background-image: linear-gradient(to bottom, #051937, #00395c, #005c7f, #00829e, #00a9b8, #36bdcd, #53d1e2, #6de6f7, #a2eaff, #ceeeff, #eef5ff, #ffffff);
+  /* background-image: linear-gradient(to bottom, #051937, #00395c, #005c7f, #00829e, #00a9b8, #36bdcd, #53d1e2, #6de6f7, #a2eaff, #ceeeff, #eef5ff, #ffffff); */
+  background-image: linear-gradient(to bottom, #051937, #0e3659, #16577c, #20799d, #309ebd, #2fb1c9, #35c3d4, #43d6dc, #3cdad5, #3dddcc, #45e0c1, #53e2b5);
 }
 
 .container-image {
@@ -50,5 +51,8 @@
   }
   .centered-txt-web{
     font-size: 1.0em
+  }
+  .img-profile{
+    max-width: 150px ;
   }
 }

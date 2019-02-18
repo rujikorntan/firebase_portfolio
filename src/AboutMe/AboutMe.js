@@ -20,7 +20,7 @@ const AboutMe = () => {
         </p>
         
       </div>
-      <img src='https://i.imgur.com/CYTVJob.jpg' height="auto" width="100%" alt="aboutMe" className="center bg-img-about"/>
+      <img src='https://i.imgur.com/a9xmS5S.jpg' height="auto" width="100%" alt="aboutMe" className="center bg-img-about"/>
       <img src='https://i.imgur.com/7WIrdIr.jpg' height="auto" width="100%" alt="aboutMe" className="center image-center "/>
 
 
