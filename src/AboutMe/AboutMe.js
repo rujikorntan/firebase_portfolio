@@ -3,7 +3,7 @@ import './AboutMe.css'
 
 const AboutMe = () => {
   return (
-    <div className="container-about  h-100">
+    <div className="container-about  w-100">
 
       <div className="text-about-me">
         <p>
@@ -20,7 +20,7 @@ const AboutMe = () => {
         </p>
         
       </div>
-      <img src='https://i.imgur.com/a9xmS5S.jpg' height="auto" width="100%" alt="aboutMe" className="center bg-img-about"/>
+      {/* <img src='https://i.imgur.com/a9xmS5S.jpg' height="auto" width="10%" alt="aboutMe" className="center bg-img-about"/> */}
       <img src='https://i.imgur.com/7WIrdIr.jpg' height="auto" width="100%" alt="aboutMe" className="center image-center "/>
 
 

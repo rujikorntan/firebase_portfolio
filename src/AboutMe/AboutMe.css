@@ -24,12 +24,25 @@
     height: 0;
     width: 0;
 }
+.container-about{
+    background-image:  
+    url('https://i.imgur.com/a9xmS5S.jpg');
+  
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height:100vh;
+    /* height: 800px; */
+
+}
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
     .container-about{
         position: unset !important;
         /* display: inline !important; */
+        background-image:unset;
+        height: auto;
     }
     .text-about-me{
         position: unset ;
