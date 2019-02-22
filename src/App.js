@@ -103,9 +103,9 @@ class App extends Component {
           </div>
         </div>
         <div ref={this.contact} >         {/*stop scroll for contact*/}
-          <Fade bottom>
+          {/* <Fade bottom> */}
             <Contact />
-          </Fade>
+          {/* </Fade> */}
         </div>
         <Footer />
       </div>
